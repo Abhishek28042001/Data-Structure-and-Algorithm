@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+// done by abhi
 class Node{
 	public:
 		int key;
@@ -151,7 +151,7 @@ class DoubleLinkedList{
 		// 7. Printing the list
 		void printing(){
 			if(head == NULL){
-				cout<"List is empty\n";
+				cout<<"List is empty\n";
 			}
 			else{
 				Node* ptr = head;
