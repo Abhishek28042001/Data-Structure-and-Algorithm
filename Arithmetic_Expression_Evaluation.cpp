@@ -55,10 +55,10 @@ void answer(string prefix){
     for(int i=0;i<prefix.length();i++){
         char ch = prefix[i];
         if(ch >='0' && ch<='9'){
-            s.push((int)ch - 48);
+            s.push((int)ch - 48);   //ASCII code of 0 is 48
         }
         else{
-            while(!s.empty() && s.size()>1){
+            
             int ans = 0;
             int a = s.top();
             s.pop();
@@ -86,12 +86,12 @@ void answer(string prefix){
                 ans = b-a;
                 s.push(ans);
             }
-           }
+        
             
         }
 
     }
-    cout<<endl<<s.top();
+    cout<<s.top();
 }
 
 
