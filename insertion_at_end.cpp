@@ -16,7 +16,19 @@ void insertion(stack<int> &s, int n){
     s.push(num);
 }
 
+// void reverse(stack<int> &s){
+//     //base case
+//     if(s.empty()){
+//         return;
+//     }
+//     int num = s.top();
+//     s.pop();
 
+//     //recursive call
+//     reverse(s);
+
+//     insertion(s,num);
+// }
 
 int main(){
 
@@ -32,6 +44,8 @@ int main(){
     cin>>n;
 
     insertion(s,n);
+
+    // reverse(s);
 
     cout<<endl;
 
