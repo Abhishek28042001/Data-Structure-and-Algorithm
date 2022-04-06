@@ -1,1 +1,10 @@
-1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
+void inorder(node* root){
+    //base case
+    if(root==NULL){
+        return ;
+    }
+    inoder(root->left);
+    cout<<root->data<<" ";
+    inorder(root->right);
+
+}
